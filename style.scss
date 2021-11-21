@@ -1,0 +1,332 @@
+$main-color: #121212;
+$main-color-transparent: rgba(18, 18, 18, 0.5);
+$white: #fff;
+$transparent-white: rgba(255, 255, 255, 0.8);
+$light-gray: #aeaeae;
+$transparent-light-gray: rgba(174, 174, 174, 0.5);
+$lighter-gray: #d8d8d8;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* My code */
+
+body {
+	color: $white;
+	background-color: $main-color;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-track {
+	background: $main-color;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: $lighter-gray;
+	border-radius: 20px;
+	border: 1px solid $main-color;
+}
+.header {
+	z-index: 999;
+	background: linear-gradient(
+		180deg,
+		$main-color 0%,
+		$main-color-transparent 50%,
+		rgba(18, 18, 18, 0.1) 100%
+	);
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: fixed;
+	align-self: center;
+}
+.header__container {
+	margin: 0 auto;
+	align-self: center;
+	max-width: 1200px;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__logo {
+	height: 100%;
+	max-width: 4rem;
+}
+.header__logo-item {
+	min-width: 100%;
+	display: inline-block;
+}
+.header__nav-list {
+	display: flex;
+	gap: 3.5rem;
+}
+.header__nav-list__link {
+	color: $transparent-white;
+	text-decoration: none;
+	font-size: 1.3rem;
+	transition: color 0.2s ease-out;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+}
+.header__nav-list__link:hover {
+	color: $white;
+}
+.header__button {
+	display: none;
+}
+
+.first-screen__container {
+	padding: 0 5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 12rem;
+	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12rem;
+}
+.first-screen__text {
+	display: flex;
+	gap: 3rem;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.first-screen__text-content {
+	font-size: 3rem;
+	font-weight: 200;
+	letter-spacing: 0.4rem;
+}
+.first-screen__text-focus {
+	font-weight: 300;
+}
+.first-screen__text-addition {
+	color: $transparent-light-gray;
+	font-size: 1.7rem;
+	letter-spacing: 0.2rem;
+	font-weight: 200;
+	transition: color 0.2s ease-out;
+	-webkit-transition: color 0.2s ease-out;
+	-moz-transition: color 0.2s ease-out;
+	-ms-transition: color 0.2s ease-out;
+	-o-transition: color 0.2s ease-out;
+}
+.first-screen__text-block {
+	display: flex;
+	flex-direction: column;
+	gap: 0rem;
+}
+
+.first-screen__text:hover .first-screen__text-addition {
+	color: $light-gray;
+}
+.first-screen__image {
+	width: 350px;
+}
+.first-screen__image:hover .first-screen__image-item {
+	transform: scale(1.35);
+	-webkit-transform: scale(1.35);
+	-moz-transform: scale(1.35);
+	-ms-transform: scale(1.35);
+	-o-transform: scale(1.35);
+}
+.first-screen__image-item {
+	position: relative;
+	top: -3rem;
+	transform: scale(1.25);
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	-ms-transform: scale(1.25);
+	-o-transform: scale(1.25);
+	transition: transform 0.5s ease-out;
+	-webkit-transition: transform 0.5s ease-out;
+	-moz-transition: transform 0.5s ease-out;
+	-ms-transition: transform 0.5s ease-out;
+	-o-transition: transform 0.5s ease-out;
+}
+
+.about__container {
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	padding: 0 2rem;
+}
+.about__head {
+	text-align: center;
+	font-size: 4rem;
+	letter-spacing: 0.4rem;
+	font-weight: 400;
+	margin-bottom: 4rem;
+}
+.about__bio {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 8rem;
+}
+.about__bio-text {
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+	max-width: 35rem;
+}
+.about__bio-text__focus {
+	font-weight: 400;
+}
+.about__bio-text__paragraph {
+	margin-bottom: 1.5rem;
+	font-weight: 200;
+}
+.about__bio-text__info {
+	padding-top: 1rem;
+	font-weight: 200;
+}
+.about__bio-text__info-head {
+	margin-bottom: 1rem;
+	font-weight: 300;
+	font-size: 1.7rem;
+}
+.about__bio-text__info-item {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin-bottom: 0.6rem;
+	font-weight: 200;
+	font-size: 1.5rem;
+}
+.dance-image {
+	display: inline-block;
+	min-width: 2rem;
+	max-width: 2rem;
+}
+.about__bio-photo__item {
+	color: $white;
+	width: 100%;
+}
+
+.about__story {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about__story-image {
+	margin-right: 4rem;
+	display: flex;
+	align-items: flex-end;
+}
+.about__story-text {
+	max-width: 35rem;
+	font-size: 1.4rem;
+	font-weight: 200;
+	letter-spacing: 0.1rem;
+	line-height: 2rem;
+}
+.about__story-text__preview {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+}
+.about__story-text__paragraph {
+	margin-bottom: 2rem;
+}
+.terminal-cursor._active {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.header__nav {
+		display: none;
+	}
+	.header__button {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 5;
+	}
+	.header__button span,
+	.header__button::before,
+	.header__button::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		background-color: $white;
+	}
+	.header__button::before,
+	.header__button::after {
+		content: '';
+		color: $white;
+	}
+	.header__button::before {
+		top: 0;
+	}
+	.header__button::after {
+		bottom: 0;
+	}
+	.header__button span {
+		top: 50%;
+	}
+}
