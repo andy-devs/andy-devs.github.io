@@ -428,6 +428,9 @@ body::-webkit-scrollbar-thumb {
 	.header__nav._active {
 		display: block;
 	}
+	.header__nav-list__link {
+		font-size: 1.8rem;
+	}
 	.header__nav._active .header__nav-list {
 		margin-top: 4rem;
 		display: flex;

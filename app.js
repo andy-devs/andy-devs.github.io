@@ -44,11 +44,8 @@ for (let link of headerNavLinks) {
 		headerButton.classList.toggle('open');
 		headerNav.classList.toggle('_active');
 		header.classList.toggle('_active');
-		if (body.style.overflow != 'hidden') {
-			body.style.overflow = 'hidden';
-		} else {
-			body.style.overflow = 'visible';
-		}
+		body.style.overflow = 'visible';
+		state = false;
 	});
 }
 
