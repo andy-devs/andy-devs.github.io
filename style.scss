@@ -439,40 +439,8 @@ body::-webkit-scrollbar-thumb {
 
 	.header__button {
 		display: block;
-		position: relative;
-		width: 30px;
-		height: 20px;
-		cursor: pointer;
-		z-index: 5;
 	}
-	.header__button span,
-	.header__button::before,
-	.header__button::after {
-		left: 0;
-		position: absolute;
-		height: 10%;
-		width: 100%;
-		transition: all 0.3s ease 0s;
-		-webkit-transition: all 0.3s ease 0s;
-		-moz-transition: all 0.3s ease 0s;
-		-ms-transition: all 0.3s ease 0s;
-		-o-transition: all 0.3s ease 0s;
-		background-color: $white;
-	}
-	.header__button::before,
-	.header__button::after {
-		content: '';
-		color: $white;
-	}
-	.header__button::before {
-		top: 0;
-	}
-	.header__button::after {
-		bottom: 0;
-	}
-	.header__button span {
-		top: 50%;
-	}
+
 	.first-screen__container {
 		flex-direction: column;
 		padding: 2rem 1rem 0 1rem;

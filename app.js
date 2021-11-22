@@ -34,6 +34,7 @@ headerButton.addEventListener('click', (e) => {
 		body.style.overflow = 'visible';
 	}
 	headerButton.classList.toggle('_active');
+	headerButton.classList.toggle('open');
 	header.classList.toggle('_active');
 });
 
