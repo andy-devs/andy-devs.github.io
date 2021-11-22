@@ -95,11 +95,11 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	position: fixed;
 	align-self: center;
-	transition: top 0.3s ease-in-out;
-	-webkit-transition: top 0.3s eas;
-	-moz-transition: top 0.3s eas;
-	-ms-transition: top 0.3s eas;
-	-o-transition: top 0.3s eas;
+	transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+	-ms-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+	-o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 .nav-up {
 	top: -$header-height;
@@ -339,12 +339,35 @@ body::-webkit-scrollbar-thumb {
 	$header-height: 2rem;
 	.header__container {
 		padding: 0.7rem 1.2rem 0 1.2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.header__logo {
 		max-width: 2.7rem;
 	}
+	.header__mobile {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+	}
 	.header__nav {
 		display: none;
+	}
+
+	.header._active {
+		height: 100%;
+	}
+	.header__nav._active {
+		display: block;
+	}
+	.header__nav._active .header__nav-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		gap: 1rem;
 	}
 	.header__button {
 		display: block;

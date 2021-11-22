@@ -1,18 +1,34 @@
 const headerButton = document.querySelector('.header__button');
 const headerNav = document.querySelector('.header__nav');
+const header = document.querySelector('.header');
+const body = document.querySelector('body');
 
 headerButton.addEventListener('click', (e) => {
+	if (body.style.overflow != 'hidden') {
+		body.style.overflow = 'hidden';
+	} else {
+		body.style.overflow = 'visible';
+	}
 	headerButton.classList.toggle('_active');
 	headerNav.classList.toggle('_active');
+	header.classList.toggle('_active');
 });
+
+const headerNavLinks = document.querySelectorAll('.header__nav-list__link');
+
+for (let link of headerNavLinks) {
+	link.addEventListener('click', (e) => {
+		headerButton.classList.toggle('_active');
+		headerNav.classList.toggle('_active');
+		header.classList.toggle('_active');
+	});
+}
 
 const terminalCursor = document.querySelector('.terminal-cursor');
 
 setInterval(() => {
 	terminalCursor.classList.toggle('_active');
 }, 800);
-
-const header = document.querySelector('.header');
 
 var lastScrollTop = 0;
 var delta = 5;

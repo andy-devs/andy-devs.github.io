@@ -106,12 +106,11 @@ body::-webkit-scrollbar-thumb {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition: top 0.3s ease-in-out;
-  transition: top 0.3s ease-in-out;
-  -webkit-transition: top 0.3s eas;
-  -moz-transition: top 0.3s eas;
-  -ms-transition: top 0.3s eas;
-  -o-transition: top 0.3s eas;
+  transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  -webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .nav-up {
@@ -441,12 +440,56 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 768px) {
   .header__container {
     padding: 0.7rem 1.2rem 0 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .header__logo {
     max-width: 2.7rem;
   }
+  .header__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
   .header__nav {
     display: none;
+  }
+  .header._active {
+    height: 100%;
+  }
+  .header__nav._active {
+    display: block;
+  }
+  .header__nav._active .header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1rem;
   }
   .header__button {
     display: block;
