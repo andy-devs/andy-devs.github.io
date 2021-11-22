@@ -133,16 +133,16 @@
 .burger.burger-slide:not(.open) {
 	-webkit-animation-name: burgerAnimationSlide;
 	animation-name: burgerAnimationSlide;
-	-webkit-animation-duration: 0.6s;
-	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 	background-color: transparent;
 }
 
 .burger.burger-slide.open .burger-lines {
 	-webkit-animation-name: burgerAnimationSlide;
 	animation-name: burgerAnimationSlide;
-	-webkit-animation-duration: 0.6s;
-	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
 	background-color: transparent;
 }
 .burger.burger-slide.open .burger-lines:before,

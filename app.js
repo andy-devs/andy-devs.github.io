@@ -41,8 +41,31 @@ headerButton.addEventListener('click', (e) => {
 for (let link of headerNavLinks) {
 	link.addEventListener('click', (e) => {
 		headerButton.classList.toggle('_active');
+		headerButton.classList.toggle('open');
 		headerNav.classList.toggle('_active');
 		header.classList.toggle('_active');
+		if (body.style.overflow != 'hidden') {
+			body.style.overflow = 'hidden';
+		} else {
+			body.style.overflow = 'visible';
+		}
+		if (state === false) {
+			headerNav.classList.toggle('_active');
+			setTimeout(() => {
+				state = true;
+			}, 200);
+		} else {
+			setTimeout(() => {
+				headerNav.classList.toggle('_active');
+			}, 600);
+			setTimeout(() => {
+				state = false;
+			}, 600);
+			headerNavList.classList.toggle('_animated');
+			setTimeout(() => {
+				headerNavList.classList.toggle('_animated');
+			}, 600);
+		}
 	});
 }
 
