@@ -18,14 +18,14 @@ headerButton.addEventListener('click', (e) => {
 	} else {
 		setTimeout(() => {
 			headerNav.classList.toggle('_active');
-		}, 600);
+		}, 500);
 		setTimeout(() => {
 			state = false;
-		}, 600);
+		}, 500);
 		headerNavList.classList.toggle('_animated');
 		setTimeout(() => {
 			headerNavList.classList.toggle('_animated');
-		}, 600);
+		}, 500);
 	}
 
 	if (body.style.overflow != 'hidden') {

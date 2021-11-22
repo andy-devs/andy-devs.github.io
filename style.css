@@ -106,11 +106,11 @@ body::-webkit-scrollbar-thumb {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
-  -webkit-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
-  -moz-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
-  -ms-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
-  -o-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
+  transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+  -moz-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+  -ms-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+  -o-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
 }
 
 .nav-up {
@@ -284,7 +284,7 @@ body::-webkit-scrollbar-thumb {
 
 .about__head {
   text-align: center;
-  font-size: clamp(2.5rem, 4vw, 5rem);
+  font-size: clamp(2.2rem, 4vw, 5rem);
   letter-spacing: 0.4rem;
   font-weight: 400;
   margin-bottom: 4rem;
@@ -305,7 +305,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about__bio-text {
-  font-size: clamp(1.2rem, 1.6vw, 1.6rem);
+  font-size: clamp(1rem, 1.5vw, 1.6rem);
   letter-spacing: 0.15rem;
   max-width: 35rem;
 }
@@ -327,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 .about__bio-text__info-head {
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: clamp(1.4rem, 1.8vw, 1.8rem);
+  font-size: clamp(1.2rem, 1.7vw, 1.8rem);
 }
 
 .about__bio-text__info-item {
@@ -340,12 +340,12 @@ body::-webkit-scrollbar-thumb {
   gap: 0.5rem;
   margin-bottom: 0.6rem;
   font-weight: 200;
-  font-size: clamp(1.2rem, 1.6vw, 1.5rem);
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
 }
 
 .dance-image {
   display: inline-block;
-  width: clamp(2rem, 2vw, 2rem);
+  width: clamp(1.4rem, 2vw, 2rem);
 }
 
 .about__bio-photo {
@@ -400,14 +400,14 @@ body::-webkit-scrollbar-thumb {
 
 .about__story-text {
   max-width: 40rem;
-  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
+  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
   font-weight: 200;
   letter-spacing: 0.1rem;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 
 .about__story-text__heading {
-  font-size: clamp(1.35rem, 1.7vw, 2.1rem);
+  font-size: clamp(1.2rem, 1.7vw, 2.1rem);
   margin-bottom: 0.8rem;
   text-indent: 50px;
   font-weight: 300;
@@ -421,7 +421,7 @@ body::-webkit-scrollbar-thumb {
 
 .about__story-text__preview {
   text-indent: 50px;
-  font-size: clamp(1.6rem, 2.1vw, 2.5rem);
+  font-size: clamp(1.4rem, 2vw, 2.5rem);
   font-weight: 400;
   margin-bottom: 2.5rem;
   font-family: 'Comfortaa', cursive;
@@ -452,7 +452,7 @@ body::-webkit-scrollbar-thumb {
             align-items: center;
   }
   .header__logo {
-    max-width: 2.7rem;
+    max-width: 2.4rem;
   }
   .header__mobile {
     display: -webkit-box;
@@ -471,71 +471,71 @@ body::-webkit-scrollbar-thumb {
   }
   .header__nav-list .link-1 {
     opacity: 0;
-    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
-            animation: fadeIn 0.3s ease-in-out 1 forwards;
+    -webkit-animation: fadeIn 0.2s ease-in-out 1 forwards;
+            animation: fadeIn 0.2s ease-in-out 1 forwards;
     -webkit-animation-delay: 100ms;
             animation-delay: 100ms;
   }
   .header__nav-list .link-2 {
     opacity: 0;
-    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
-            animation: fadeIn 0.3s ease-in-out 1 forwards;
+    -webkit-animation: fadeIn 0.2s ease-in-out 1 forwards;
+            animation: fadeIn 0.2s ease-in-out 1 forwards;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
   }
   .header__nav-list .link-3 {
     opacity: 0;
-    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
-            animation: fadeIn 0.3s ease-in-out 1 forwards;
+    -webkit-animation: fadeIn 0.2s ease-in-out 1 forwards;
+            animation: fadeIn 0.2s ease-in-out 1 forwards;
     -webkit-animation-delay: 300ms;
             animation-delay: 300ms;
   }
   .header__nav-list .link-4 {
     opacity: 0;
-    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
-            animation: fadeIn 0.3s ease-in-out 1 forwards;
+    -webkit-animation: fadeIn 0.2s ease-in-out 1 forwards;
+            animation: fadeIn 0.2s ease-in-out 1 forwards;
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
   }
   .header__nav-list .link-5 {
     opacity: 0;
-    -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
-            animation: fadeIn 0.3s ease-in-out 1 forwards;
+    -webkit-animation: fadeIn 0.2s ease-in-out 1 forwards;
+            animation: fadeIn 0.2s ease-in-out 1 forwards;
     -webkit-animation-delay: 500ms;
             animation-delay: 500ms;
   }
   .header__nav-list._animated .link-1 {
     opacity: 1;
-    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
-            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation: fadeOut 0.1s ease-in-out 1 forwards;
+            animation: fadeOut 0.1s ease-in-out 1 forwards;
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
   }
   .header__nav-list._animated .link-2 {
     opacity: 1;
-    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
-            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation: fadeOut 0.1s ease-in-out 1 forwards;
+            animation: fadeOut 0.1s ease-in-out 1 forwards;
     -webkit-animation-delay: 300ms;
             animation-delay: 300ms;
   }
   .header__nav-list._animated .link-3 {
     opacity: 1;
-    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
-            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation: fadeOut 0.1s ease-in-out 1 forwards;
+            animation: fadeOut 0.1s ease-in-out 1 forwards;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
   }
   .header__nav-list._animated .link-4 {
     opacity: 1;
-    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
-            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation: fadeOut 0.1s ease-in-out 1 forwards;
+            animation: fadeOut 0.1s ease-in-out 1 forwards;
     -webkit-animation-delay: 100ms;
             animation-delay: 100ms;
   }
   .header__nav-list._animated .link-5 {
     opacity: 1;
-    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
-            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation: fadeOut 0.1s ease-in-out 1 forwards;
+            animation: fadeOut 0.1s ease-in-out 1 forwards;
     -webkit-animation-delay: 0ms;
             animation-delay: 0ms;
   }
@@ -625,21 +625,21 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 3.5rem;
   }
   .first-screen__text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    text-align: left;
   }
   .first-screen__text-content {
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    letter-spacing: 0.2rem;
+    font-size: clamp(1.7rem, 3.8vw, 2.5rem);
+    letter-spacing: 0.12rem;
   }
   .hello-p {
-    font-size: clamp(2.2rem, 4.1vw, 3rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 0.4rem;
   }
   .frontend-p {
-    font-size: clamp(1.7rem, 3.1vw, 3rem);
+    font-size: clamp(1.5rem, 2.9vw, 3rem);
     line-height: 2.4rem;
   }
   .first-screen__image-item {
@@ -647,6 +647,7 @@ body::-webkit-scrollbar-thumb {
   }
   .first-screen__text-addition {
     margin-top: 0.2rem;
+    letter-spacing: 0.1rem;
   }
   .first-screen__image-item {
     transform: scale(0.8);
@@ -678,6 +679,9 @@ body::-webkit-scrollbar-thumb {
   }
   .about__bio-photo {
     max-width: 15rem;
+  }
+  .about__bio-text {
+    letter-spacing: 0.1rem;
   }
   .about__story {
     -webkit-box-orient: vertical;
