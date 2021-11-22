@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 
 .header__logo {
   height: 100%;
-  max-width: 3rem;
+  max-width: 3.5rem;
 }
 
 .header__logo-item {
@@ -152,9 +152,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__nav-list__link {
+  font-family: 'Comfortaa', cursive;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   transition: color 0.2s ease-out;
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
@@ -442,6 +443,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 768px) {
+  .header {
+    -webkit-transition: top 0.2s ease-in-out, height 0.5s ease-in-out, background 0.2s ease-in-out, -webkit-backdrop-filter 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out, height 0.5s ease-in-out, background 0.2s ease-in-out, -webkit-backdrop-filter 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out, height 0.5s ease-in-out, background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out, height 0.5s ease-in-out, background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out, -webkit-backdrop-filter 0.2s ease-in-out;
+    -webkit-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+    -moz-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+    -ms-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+    -o-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+  }
+  .header._active {
+    background: rgba(18, 18, 18, 0.8);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+  }
   .header__container {
     padding: 0.7rem 1.2rem 0 1.2rem;
     display: -webkit-box;
@@ -598,10 +614,10 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   .header__nav-list__link {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .header__nav._active .header__nav-list {
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -615,7 +631,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
   .header__button {
     display: block;
