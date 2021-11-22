@@ -2,6 +2,11 @@ const headerButton = document.querySelector('.header__button');
 const headerNav = document.querySelector('.header__nav');
 const header = document.querySelector('.header');
 const body = document.querySelector('body');
+let headerNavLinks = document.querySelectorAll('.header__nav-list__link');
+
+for (let i = 0; i < headerNavLinks.length; i++) {
+	headerNavLinks[i].classList.add(`link-${i + 1}`);
+}
 
 headerButton.addEventListener('click', (e) => {
 	if (body.style.overflow != 'hidden') {
@@ -13,8 +18,6 @@ headerButton.addEventListener('click', (e) => {
 	headerNav.classList.toggle('_active');
 	header.classList.toggle('_active');
 });
-
-const headerNavLinks = document.querySelectorAll('.header__nav-list__link');
 
 for (let link of headerNavLinks) {
 	link.addEventListener('click', (e) => {

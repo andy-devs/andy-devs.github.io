@@ -95,11 +95,11 @@ body::-webkit-scrollbar-thumb {
 	width: 100%;
 	position: fixed;
 	align-self: center;
-	transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-	-webkit-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-	-moz-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-	-ms-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
-	-o-transition: top 0.3s ease-in-out, height 0.3s ease-in-out;
+	transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
+	-ms-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
+	-o-transition: top 0.3s ease-in-out, height 0.6s ease-in-out;
 }
 .nav-up {
 	top: -$header-height;
@@ -356,6 +356,37 @@ body::-webkit-scrollbar-thumb {
 		display: none;
 	}
 
+	@for $i from 1 through 5 {
+		.link-#{$i} {
+			opacity: 0;
+			animation: fadeIn 0.3s ease-in-out 1 forwards;
+			animation-delay: #{$i * 100}ms;
+		}
+	}
+	.fadeIn {
+		-webkit-animation-name: fadeIn;
+		animation-name: fadeIn;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	.header._active {
 		height: 100%;
 	}
@@ -370,6 +401,7 @@ body::-webkit-scrollbar-thumb {
 		justify-content: flex-start;
 		gap: 1.5rem;
 	}
+
 	.header__button {
 		display: block;
 		position: relative;
