@@ -304,7 +304,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about__bio-text {
-  font-size: clamp(1rem, 1.5vw, 1.6rem);
+  font-size: clamp(1.1rem, 1.7vw, 1.7rem);
   letter-spacing: 0.15rem;
   max-width: 35rem;
 }
@@ -326,7 +326,7 @@ body::-webkit-scrollbar-thumb {
 .about__bio-text__info-head {
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: clamp(1.2rem, 1.7vw, 1.8rem);
+  font-size: clamp(1.3rem, 1.8vw, 1.9rem);
 }
 
 .about__bio-text__info-item {
@@ -337,14 +337,15 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.7em;
   font-weight: 200;
-  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-size: clamp(0.9rem, 1.4vw, 1.5rem);
+  line-height: 1.3rem;
 }
 
 .dance-image {
   display: inline-block;
-  width: clamp(1.4rem, 2vw, 2rem);
+  width: clamp(1.4rem, 1.5vw, 2.2rem);
 }
 
 .about__bio-photo {
@@ -399,7 +400,7 @@ body::-webkit-scrollbar-thumb {
 
 .about__story-text {
   max-width: 40rem;
-  font-size: clamp(0.9rem, 1.2vw, 1.5rem);
+  font-size: clamp(1rem, 1.3vw, 1.3rem);
   font-weight: 200;
   letter-spacing: 0.1rem;
   line-height: 1.8rem;
@@ -627,20 +628,24 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-align: left;
         -ms-flex-align: left;
             align-items: left;
-    text-align: left;
     gap: clamp(1rem, 2vw, 2rem);
     margin-bottom: 0.5rem;
   }
   .first-screen__text-content {
-    font-size: clamp(1.7rem, 3.8vw, 2.5rem);
+    font-size: clamp(1.9rem, 3.2vw, 3.2rem);
     letter-spacing: 0.12rem;
   }
   .hello-p {
-    font-size: clamp(2rem, 4vw, 3rem);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    font-size: clamp(2.5rem, 3.5vw, 3.6rem);
     margin-bottom: 0.5rem;
   }
   .frontend-p {
-    font-size: clamp(1.5rem, 2.9vw, 3rem);
+    margin-top: 0.1rem;
+    font-size: clamp(1.6rem, 3vw, 3rem);
     line-height: 2rem;
   }
   .first-screen__image-item {
@@ -669,7 +674,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0 2rem;
   }
   .about__head {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .about__bio {
     -webkit-box-orient: vertical;
@@ -704,6 +709,9 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     text-indent: 0;
     margin-bottom: 1rem;
+  }
+  .about__story-text__paragraph {
+    margin-bottom: 1.7rem;
   }
   .about__story-text__heading {
     margin-bottom: 0.2rem;
