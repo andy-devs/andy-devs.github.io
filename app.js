@@ -2,20 +2,38 @@ const headerButton = document.querySelector('.header__button');
 const headerNav = document.querySelector('.header__nav');
 const header = document.querySelector('.header');
 const body = document.querySelector('body');
+const headerNavList = document.querySelector('.header__nav-list');
 let headerNavLinks = document.querySelectorAll('.header__nav-list__link');
 
 for (let i = 0; i < headerNavLinks.length; i++) {
 	headerNavLinks[i].classList.add(`link-${i + 1}`);
 }
-
+let state = false;
 headerButton.addEventListener('click', (e) => {
+	if (state === false) {
+		headerNav.classList.toggle('_active');
+		setTimeout(() => {
+			state = true;
+		}, 200);
+	} else {
+		setTimeout(() => {
+			headerNav.classList.toggle('_active');
+		}, 600);
+		setTimeout(() => {
+			state = false;
+		}, 600);
+		headerNavList.classList.toggle('_animated');
+		setTimeout(() => {
+			headerNavList.classList.toggle('_animated');
+		}, 600);
+	}
+
 	if (body.style.overflow != 'hidden') {
 		body.style.overflow = 'hidden';
 	} else {
 		body.style.overflow = 'visible';
 	}
 	headerButton.classList.toggle('_active');
-	headerNav.classList.toggle('_active');
 	header.classList.toggle('_active');
 });
 

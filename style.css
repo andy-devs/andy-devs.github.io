@@ -469,40 +469,75 @@ body::-webkit-scrollbar-thumb {
   .header__nav {
     display: none;
   }
-  .link-1 {
+  .header__nav-list .link-1 {
     opacity: 0;
     -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
             animation: fadeIn 0.3s ease-in-out 1 forwards;
     -webkit-animation-delay: 100ms;
             animation-delay: 100ms;
   }
-  .link-2 {
+  .header__nav-list .link-2 {
     opacity: 0;
     -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
             animation: fadeIn 0.3s ease-in-out 1 forwards;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
   }
-  .link-3 {
+  .header__nav-list .link-3 {
     opacity: 0;
     -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
             animation: fadeIn 0.3s ease-in-out 1 forwards;
     -webkit-animation-delay: 300ms;
             animation-delay: 300ms;
   }
-  .link-4 {
+  .header__nav-list .link-4 {
     opacity: 0;
     -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
             animation: fadeIn 0.3s ease-in-out 1 forwards;
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
   }
-  .link-5 {
+  .header__nav-list .link-5 {
     opacity: 0;
     -webkit-animation: fadeIn 0.3s ease-in-out 1 forwards;
             animation: fadeIn 0.3s ease-in-out 1 forwards;
     -webkit-animation-delay: 500ms;
             animation-delay: 500ms;
+  }
+  .header__nav-list._animated .link-1 {
+    opacity: 1;
+    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
+            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation-delay: 400ms;
+            animation-delay: 400ms;
+  }
+  .header__nav-list._animated .link-2 {
+    opacity: 1;
+    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
+            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+  }
+  .header__nav-list._animated .link-3 {
+    opacity: 1;
+    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
+            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation-delay: 200ms;
+            animation-delay: 200ms;
+  }
+  .header__nav-list._animated .link-4 {
+    opacity: 1;
+    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
+            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation-delay: 100ms;
+            animation-delay: 100ms;
+  }
+  .header__nav-list._animated .link-5 {
+    opacity: 1;
+    -webkit-animation: fadeOut 0.2s ease-in-out 1 forwards;
+            animation: fadeOut 0.2s ease-in-out 1 forwards;
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
   }
   .fadeIn {
     -webkit-animation-name: fadeIn;
@@ -526,6 +561,30 @@ body::-webkit-scrollbar-thumb {
     }
     100% {
       opacity: 1;
+    }
+  }
+  .fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
   .header._active {
