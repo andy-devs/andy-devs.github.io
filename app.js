@@ -49,23 +49,6 @@ for (let link of headerNavLinks) {
 		} else {
 			body.style.overflow = 'visible';
 		}
-		if (state === false) {
-			headerNav.classList.toggle('_active');
-			setTimeout(() => {
-				state = true;
-			}, 200);
-		} else {
-			setTimeout(() => {
-				headerNav.classList.toggle('_active');
-			}, 600);
-			setTimeout(() => {
-				state = false;
-			}, 600);
-			headerNavList.classList.toggle('_animated');
-			setTimeout(() => {
-				headerNavList.classList.toggle('_animated');
-			}, 600);
-		}
 	});
 }
 
