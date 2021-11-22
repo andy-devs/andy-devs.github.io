@@ -330,7 +330,7 @@ body::-webkit-scrollbar-thumb {
 .about__bio-text__info-head {
   margin-bottom: 1rem;
   font-weight: 300;
-  font-size: clamp(1.3rem, 1.8vw, 1.9rem);
+  font-size: clamp(1.4rem, 1.8vw, 1.9rem);
 }
 
 .about__bio-text__info-item {
