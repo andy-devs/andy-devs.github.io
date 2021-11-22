@@ -193,7 +193,7 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: clamp(1rem, 4vw, 4rem);
+  gap: clamp(1.7rem, 3vw, 4rem);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -207,7 +207,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .first-screen__text-content {
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.8rem, 3.3vw, 2.5rem);
   font-weight: 200;
   letter-spacing: 0.4rem;
   line-height: 2.7rem;
@@ -223,7 +223,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.2rem;
   line-height: 1.5rem;
   font-weight: 200;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
   transition: color 0.2s ease-out;
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
@@ -473,8 +473,26 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem 1.5rem 0 1.5rem;
+    padding: 2rem 1rem 0 1rem;
     margin-bottom: 3.5rem;
+  }
+  .first-screen__text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .first-screen__text-content {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    letter-spacing: 0.2rem;
+  }
+  .hello-p {
+    font-size: clamp(2.2rem, 4.1vw, 3rem);
+    margin-bottom: 0.4rem;
+  }
+  .frontend-p {
+    font-size: clamp(1.7rem, 3.1vw, 3rem);
+    line-height: 2.4rem;
   }
   .first-screen__image-item {
     top: 0;
