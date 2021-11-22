@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .first-screen__text-addition {
-  color: rgba(174, 174, 174, 0.5);
+  color: rgba(174, 174, 174, 0.4);
   font-size: clamp(1.3rem, 2.5vw, 1.7rem);
   letter-spacing: 0.2rem;
   line-height: 1.5rem;
