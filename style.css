@@ -476,6 +476,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
   .header__nav._active .header__nav-list {
+    margin-top: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +490,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .header__button {
     display: block;

@@ -363,11 +363,12 @@ body::-webkit-scrollbar-thumb {
 		display: block;
 	}
 	.header__nav._active .header__nav-list {
+		margin-top: 4rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 	.header__button {
 		display: block;
