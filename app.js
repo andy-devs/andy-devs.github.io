@@ -70,7 +70,7 @@ setInterval(function () {
 		hasScrolled();
 		didScroll = false;
 	}
-}, 250);
+}, 200);
 function hasScrolled() {
 	var st = $(this).scrollTop();
 	if (Math.abs(lastScrollTop - st) <= delta) return;
