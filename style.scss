@@ -161,7 +161,7 @@ body::-webkit-scrollbar-thumb {
 	justify-content: flex-start;
 }
 .first-screen__text-content {
-	font-size: clamp(2.2rem, 3vw, 3rem);
+	font-size: clamp(1.8rem, 3vw, 3rem);
 	font-weight: 200;
 	letter-spacing: 0.4rem;
 	line-height: 2.7rem;
@@ -171,7 +171,7 @@ body::-webkit-scrollbar-thumb {
 }
 .first-screen__text-addition {
 	color: $transparent-light-gray;
-	font-size: clamp(1.5rem, 2.5vw, 1.7rem);
+	font-size: clamp(1.3rem, 2.5vw, 1.7rem);
 	letter-spacing: 0.2rem;
 	line-height: 1.5rem;
 	font-weight: 200;
@@ -267,7 +267,7 @@ body::-webkit-scrollbar-thumb {
 }
 .dance-image {
 	display: inline-block;
-	width: clamp(1.5rem, 1.8vw, 1.6rem);
+	width: clamp(2rem, 2vw, 2rem);
 }
 
 .about__bio-photo {
@@ -288,7 +288,6 @@ body::-webkit-scrollbar-thumb {
 	color: $white;
 	width: 100%;
 	height: auto;
-	object-fit: cover;
 }
 
 .about__story {
@@ -323,6 +322,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 768px) {
+	$header-height: 2rem;
+	.header__container {
+		padding: 0.7rem 1.2rem 0 1.2rem;
+	}
+	.header__logo {
+		max-width: 2.7rem;
+	}
 	.header__nav {
 		display: none;
 	}
@@ -364,26 +370,29 @@ body::-webkit-scrollbar-thumb {
 	}
 	.first-screen__container {
 		flex-direction: column;
-		gap: 5rem;
-		padding: 2rem 1rem 0 1rem;
-		margin-bottom: 7rem;
+		padding: 2rem 1.5rem 0 1.5rem;
+		margin-bottom: 3.5rem;
+	}
+	.first-screen__image-item {
+		top: 0;
 	}
 	.first-screen__text-addition {
 		margin-top: 0.2rem;
 	}
-	.first-screen__image:hover .first-screen__image-item {
-		transform: scale(1.1);
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		-ms-transform: scale(1.1);
-		-o-transform: scale(1.1);
-	}
+
 	.first-screen__image-item {
-		transform: scale(1);
-		-webkit-transform: scale(1);
-		-moz-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+	}
+	.first-screen__image:hover .first-screen__image-item {
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
 	}
 	.about__head {
 		margin-bottom: 2rem;
@@ -391,12 +400,16 @@ body::-webkit-scrollbar-thumb {
 	.about__bio {
 		flex-direction: column;
 		gap: 3rem;
+		margin-bottom: 4rem;
 	}
 	.about__bio-photo {
 		max-width: 20rem;
 	}
 	.about__story {
 		flex-direction: column-reverse;
+	}
+	.about__story-text__preview {
+		text-align: center;
 	}
 	.about__story-image {
 		position: relative;
