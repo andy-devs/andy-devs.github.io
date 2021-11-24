@@ -680,6 +680,49 @@
 				</div>
 			</div>
 		</section>
+		<section id="contacts" class="contacts">
+			<h2 class="contacts__head">Contacts</h2>
+			<p class="contacts__paragraph">
+				If you want to contact me for any of your reasons...
+			</p>
+			<p class="contacts__paragraph">Send me email!</p>
+			<form
+				action="https://formsubmit.co/markushin.andrew@gmail.com"
+				method="POST"
+				class="contacts__form"
+			>
+				<input
+					type="text"
+					id="name"
+					name="name"
+					placeholder="your name"
+					required
+				/>
+				<input
+					type="email"
+					id="email"
+					name="email"
+					placeholder="your email"
+					required
+				/>
+				<textarea
+					name="message"
+					id="message"
+					cols="30"
+					rows="10"
+					placeholder="message..."
+					required
+				></textarea>
+				<input type="text" name="_honey" style="display: none" />
+				<input type="hidden" name="_captcha" value="false" />
+				<input
+					type="hidden"
+					name="_next"
+					value="https://andy-devs.github.io/personal-website"
+				/>
+				<button type="submit" id="submit" name="submit">Send</button>
+			</form>
+		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="./app.js"></script>
 	</body>
