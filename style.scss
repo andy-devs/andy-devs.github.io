@@ -226,6 +226,7 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 2rem;
 	padding: 0 2rem;
 	padding-top: 3rem;
+	padding-bottom: 2.5rem;
 }
 .about__head {
 	text-align: center;
@@ -339,6 +340,70 @@ body::-webkit-scrollbar-thumb {
 }
 .terminal-cursor._active {
 	display: none;
+}
+
+.skills {
+	padding: 0 1rem;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+.skills__head {
+	text-align: center;
+	font-size: clamp(2.3rem, 4.1vw, 5rem);
+	letter-spacing: 0.4rem;
+	font-weight: 400;
+	margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
+	font-family: 'Comfortaa', cursive;
+}
+.skills__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.skills__block-head {
+	display: flex;
+	gap: clamp(3rem, 9vw, 11rem);
+	margin-bottom: 0.75rem;
+}
+.skills__block-head__item {
+	font-size: clamp(8rem, 14vw, 16rem);
+}
+.skills__block-text__paragraph-lead {
+	text-align: center;
+	font-size: clamp(1.3rem, 2.1vw, 4.5rem);
+	margin-bottom: 0.5rem;
+}
+.skills__block-text__paragraph {
+	text-indent: 30px;
+	font-size: clamp(1.05rem, 1.4vw, 2.5rem);
+	font-weight: 200;
+	margin-bottom: 0.9rem;
+}
+.skills__block-text__list {
+	font-weight: 200;
+	margin-bottom: 0.9rem;
+}
+.skills__block-text__list-head {
+	font-size: clamp(1.4rem, 1.6vw, 3.2rem);
+	font-weight: 300;
+	text-indent: 30px;
+}
+.skills__block-text__list-item {
+	padding-left: 4rem;
+	font-size: clamp(1.05rem, 1.5vw, 2.5rem);
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 0.7rem;
+}
+.lang-logo {
+	margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -472,18 +537,18 @@ body::-webkit-scrollbar-thumb {
 		margin-bottom: 0.5rem;
 	}
 	.first-screen__text-content {
-		font-size: clamp(1.9rem, 3.2vw, 3.2rem);
+		font-size: clamp(2rem, 3.3vw, 3.5rem);
 		letter-spacing: 0.12rem;
 	}
 	.hello-p {
 		align-self: center;
 		text-align: center;
-		font-size: clamp(2.5rem, 3.5vw, 3.6rem);
+		font-size: clamp(2.6rem, 3.5vw, 3.7rem);
 		margin-bottom: 0.5rem;
 	}
 	.frontend-p {
 		margin-top: 0.1rem;
-		font-size: clamp(1.6rem, 3vw, 3rem);
+		font-size: clamp(1.65rem, 3.1vw, 3.2rem);
 		line-height: 2rem;
 	}
 
@@ -547,6 +612,7 @@ body::-webkit-scrollbar-thumb {
 	.about__story-text__paragraph {
 		margin-bottom: 1.7rem;
 		text-indent: 30px;
+		line-height: 1.55rem;
 	}
 	.about__story-text__heading {
 		margin-bottom: 0.2rem;
