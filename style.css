@@ -559,18 +559,20 @@ body::-webkit-scrollbar-thumb {
 
 .projects__grid {
   max-width: 1200px;
+  padding: 0 1rem;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   grid-gap: 4rem;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .projects__grid-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -883,18 +885,18 @@ body::-webkit-scrollbar-thumb {
     line-height: 1rem;
   }
   .first-screen__image-item {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
+    transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+    -moz-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    -o-transform: scale(0.65);
   }
   .first-screen__image:hover .first-screen__image-item {
-    transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
   }
   .about__container {
     padding: 0 1.4rem;
@@ -951,6 +953,31 @@ body::-webkit-scrollbar-thumb {
     -ms-flex-item-align: start;
         align-self: flex-start;
     max-width: 5rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .projects__grid {
+    grid-gap: 3rem;
+    -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+
+@media (max-width: 855px) {
+  .projects__grid {
+    grid-gap: 2rem;
+    -ms-grid-columns: (minmax(14rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .projects__grid {
+    padding: 0 0.4rem;
+    grid-gap: 1rem;
+    -ms-grid-columns: (minmax(13rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   }
 }
 /*# sourceMappingURL=style.css.map */
