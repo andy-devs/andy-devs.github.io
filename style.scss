@@ -352,6 +352,7 @@ body::-webkit-scrollbar-thumb {
 	align-items: center;
 	justify-content: flex-start;
 	gap: 2rem;
+	margin-bottom: 4rem;
 }
 .skills__head {
 	text-align: center;
@@ -406,15 +407,97 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 0;
 }
 
+.projects {
+	padding-top: 2rem;
+	margin-bottom: 2rem;
+}
+.projects__head {
+	text-align: center;
+	font-size: clamp(2.3rem, 4.1vw, 5rem);
+	letter-spacing: 0.4rem;
+	font-weight: 400;
+	margin-bottom: clamp(2.5rem, 3.2vw, 3.5rem);
+	font-family: 'Comfortaa', cursive;
+}
+.projects__grid {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 4rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.projects__grid-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.5rem 1rem 0rem 1rem;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.projects__grid-item__head {
+	text-align: center;
+	font-size: clamp(1.2rem, 1.6vw, 2.2rem);
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	margin-bottom: 0.4rem;
+}
+.projects__grid-item__info {
+	opacity: 0;
+	font-size: clamp(1rem, 1.3vw, 2rem);
+	font-weight: 200;
+	transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+}
+.projects__grid-item__links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.projects__grid-item__links-item {
+	color: $white;
+	font-size: clamp(1.9rem, 3.2vw, 3.4rem);
+	opacity: 0.5;
+	transition: opacity 0.2s ease-out;
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+}
+.projects__grid-item:hover .projects__grid-item__info {
+	opacity: 1;
+}
+.projects__grid-item:hover .projects__grid-item__head {
+	opacity: 1;
+}
+.projects__grid-item__links-item:hover {
+	opacity: 0.8;
+}
+
 @media (max-width: 768px) {
 	$header-height: 2rem;
 	.header {
 		transition: top 0.2s ease-in-out, height 0.5s ease-in-out,
 			background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
-		-webkit-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
-		-moz-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
-		-ms-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
-		-o-transition: top 0.2s ease-in-out, height 0.5s ease-in-out;
+		-webkit-transition: top 0.2s ease-in-out, height 0.5s ease-in-out,
+			background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
+		-moz-transition: top 0.2s ease-in-out, height 0.5s ease-in-out,
+			background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
+		-ms-transition: top 0.2s ease-in-out, height 0.5s ease-in-out,
+			background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
+		-o-transition: top 0.2s ease-in-out, height 0.5s ease-in-out,
+			background 0.2s ease-in-out, backdrop-filter 0.2s ease-in-out;
 	}
 	.header._active {
 		background: rgba(18, 18, 18, 0.8);
