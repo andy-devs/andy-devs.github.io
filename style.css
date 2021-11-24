@@ -471,7 +471,7 @@ body::-webkit-scrollbar-thumb {
   font-size: clamp(2.3rem, 4.1vw, 5rem);
   letter-spacing: 0.4rem;
   font-weight: 400;
-  margin-bottom: clamp(0.5rem, 1vw, 1.5rem);
+  margin-bottom: clamp(0rem, 1vw, 1.5rem);
   font-family: 'Comfortaa', cursive;
 }
 
@@ -648,6 +648,197 @@ body::-webkit-scrollbar-thumb {
 
 .projects__grid-item__links-item:hover {
   opacity: 0.8;
+}
+
+.contacts {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.contacts__head {
+  text-align: center;
+  font-size: clamp(2.3rem, 4.1vw, 5rem);
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  margin-bottom: clamp(1.5rem, 2vw, 2.2rem);
+  font-family: 'Comfortaa', cursive;
+}
+
+.contacts__text {
+  text-align: center;
+  font-size: clamp(1.3rem, 2vw, 3rem);
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  margin-bottom: clamp(0.5rem, 0.8vw, 1rem);
+}
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.contacts__form-first {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  gap: 0 2rem;
+  margin-bottom: 1.7rem;
+}
+
+.contacts__form-input,
+.contacts__form-textarea {
+  color: #000;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.contacts__form-input {
+  width: 50%;
+  padding: 0.5rem 0.7rem 0.5rem 1rem;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+}
+
+.contacts__form-input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
+}
+
+.contacts__form-textarea {
+  padding: 0.5rem 0.7rem 0.5rem 1rem;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: -webkit-box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  -ms-transition: box-shadow 0.2s ease-in-out;
+  -o-transition: box-shadow 0.2s ease-in-out;
+  resize: none;
+  margin-bottom: 2rem;
+}
+
+.contacts__form-textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.8);
+}
+
+.contacts__form-button {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.3rem;
+  padding: 0.2rem 4rem;
+  border: solid 2px #fff;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.contacts__form-button:hover {
+  border: solid 2px #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.contacts__text-bigger {
+  font-size: clamp(1.8rem, 3vw, 3.5rem);
+}
+
+.contacts__social {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.contacts__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(1.3rem, 2vw, 2.5rem);
+}
+
+.contacts__social-image {
+  font-size: clamp(1.5rem, 2.2vw, 2.8rem);
+  width: 1.5rem;
+  margin-right: clamp(0.7rem, 1.8vw, 2.2rem);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+}
+
+.contacts__social-item:hover .contacts__social-text {
+  text-decoration: underline;
+}
+
+.contacts__social-item:hover .contacts__social-image {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 @media (max-width: 768px) {
@@ -898,6 +1089,9 @@ body::-webkit-scrollbar-thumb {
     -ms-transform: scale(0.75);
     -o-transform: scale(0.75);
   }
+  .about {
+    margin-bottom: 2rem;
+  }
   .about__container {
     padding: 0 1.4rem;
     padding-top: 2rem;
@@ -954,6 +1148,9 @@ body::-webkit-scrollbar-thumb {
         align-self: flex-start;
     max-width: 5rem;
   }
+  .skills {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -974,7 +1171,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 520px) {
   .projects__grid {
-    padding: 0 0.4rem;
+    padding: 0 3rem;
     grid-gap: 1rem;
     -ms-grid-columns: (minmax(13rem, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));

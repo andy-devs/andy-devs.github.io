@@ -682,30 +682,36 @@
 		</section>
 		<section id="contacts" class="contacts">
 			<h2 class="contacts__head">Contacts</h2>
-			<p class="contacts__paragraph">
+			<p class="contacts__text">
 				If you want to contact me for any of your reasons...
 			</p>
-			<p class="contacts__paragraph">Send me email!</p>
+			<p class="contacts__text">Send me email!</p>
+
 			<form
 				action="https://formsubmit.co/markushin.andrew@gmail.com"
 				method="POST"
 				class="contacts__form"
 			>
-				<input
-					type="text"
-					id="name"
-					name="name"
-					placeholder="your name"
-					required
-				/>
-				<input
-					type="email"
-					id="email"
-					name="email"
-					placeholder="your email"
-					required
-				/>
+				<div class="contacts__form-first">
+					<input
+						class="contacts__form-input"
+						type="text"
+						id="name"
+						name="name"
+						placeholder="your name"
+						required
+					/>
+					<input
+						class="contacts__form-input"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="your email"
+						required
+					/>
+				</div>
 				<textarea
+					class="contacts__form-textarea"
 					name="message"
 					id="message"
 					cols="30"
@@ -720,8 +726,55 @@
 					name="_next"
 					value="https://andy-devs.github.io/personal-website"
 				/>
-				<button type="submit" id="submit" name="submit">Send</button>
+				<button
+					type="submit"
+					id="submit"
+					name="submit"
+					class="contacts__form-button"
+				>
+					Send
+				</button>
 			</form>
+			<p class="contacts__text contacts__text-bigger">My Socials</p>
+			<div class="contacts__social">
+				<a
+					href="mailto:markushin.andrew@gmail.com"
+					class="contacts__social-item"
+				>
+					<i class="far fa-envelope contacts__social-image"></i>
+					<p class="contacts__social-text">
+						markushin.andrew@gmail.com
+					</p>
+				</a>
+				<a
+					href="https://github.com/andy-devs"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-github contacts__social-image"></i>
+					<p class="contacts__social-text">andy-devs</p>
+				</a>
+				<a
+					href="https://vk.com/mark.andrey"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-vk contacts__social-image"></i>
+					<p class="contacts__social-text">mark.andrey</p>
+				</a>
+				<a
+					href="https://www.instagram.com/markusshinn/"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-instagram contacts__social-image"></i>
+					<p class="contacts__social-text">markusshinn/andy-devs</p>
+				</a>
+				<a
+					href="https://www.facebook.com/profile.php?id=100071666065631"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-facebook contacts__social-image"></i>
+					<p class="contacts__social-text">Andrey Markushin</p>
+				</a>
+			</div>
 		</section>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="./app.js"></script>
