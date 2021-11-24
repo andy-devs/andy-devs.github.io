@@ -250,7 +250,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .first-screen__image {
-  max-width: 20rem;
+  max-width: 23rem;
 }
 
 .first-screen__image:hover .first-screen__image-item {
