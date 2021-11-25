@@ -447,6 +447,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300;
   text-indent: 50px;
   white-space: normal;
+  text-align: justify;
 }
 
 .terminal-cursor._active {
@@ -520,6 +521,7 @@ body::-webkit-scrollbar-thumb {
   font-size: clamp(1.05rem, 1.5vw, 1.6rem);
   font-weight: 200;
   margin-bottom: 0.9rem;
+  text-align: justify;
 }
 
 .skills__block-text__list {

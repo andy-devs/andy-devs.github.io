@@ -414,14 +414,11 @@ var lang_ru = {
 					</p>
 					<p class="skills__block-text__paragraph">
 						Я сделал много проектов на этих технологиях (вы можете посмотреть на примеры в секции с проектами)
-						 и продолжаю изучать их глубже. Я прошёл
-						 I took Responsive Web Design Course on
-						freeCodeCamp and Web Development Course on Udemy, which
-						I talked about earlier.
+						 и продолжаю изучать их глубже. Я прошёл курс по Адаптивному Веб Дизайну на freeCodeCamp 
+						 и курс Веб разработки на Udemy, о котором я говорил раннее.
 					</p>
 					<p class="skills__block-text__paragraph">
-						I also worked with CSS preprocessors (SASS, SCSS). I use
-						SCSS for styling on this website.
+						Также я работал CSS препроцессорами (SASS, SCSS). Я использую SCSS для стилизования на этом сайте.
 					</p>
 				</div>
 			</div>
@@ -431,22 +428,18 @@ var lang_ru = {
 				</div>
 				<div class="skills__block-text">
 					<p class="skills__block-text__paragraph-lead">
-						I have intermediate skills in JavaScript.
+						У меня средний уровень навыков в JavaScript.
 					</p>
 					<p class="skills__block-text__paragraph">
-						I also worked with it in my projects. I took JavaScript
-						Algorithms and Data Structures Course on freeCodeCamp.
-						JS was in that Web Development Course on Udemy too (yes,
-						I love and recommend that one, if you want to learn web
-						development). I continue to solidify my knowledge in
-						this programming language by reading a book about it and
-						solving algorithmic challenges on CodeWars.
+						Я также работал с ним в своих нескольких проектах. Я прошёл курс Алгоритмов и Структур Данных на freeCodeCamp. 
+						JS тоже был в курсе по Веб разработку на Udemy. 
+						(Я очень рекомендую его, если вы тоже хотите научится Веб разработке). Я продолжаю оттачивать свои навыки в этом языке 
+						программирования читая книгу и решая алгоритмические задачки на CodeWars.
 					</p>
-					<p class="skills__block-text__paragraph">
-						In the nearest future, I want to learn React and It’s
-						ecosystem. But for now, I try to level up my skills in
-						vanilla JS. I really enjoy using it! Well, most of the
-						time.
+					<p class="skills__block-text__paragraph">]
+						В ближайшем будущем Я хочу изучить React и его экосистему.
+						Но сейчас я повышаю свой уровень в нативном JS.
+						Я очень люблю на нём писать! Что ж, большую часть времени.
 					</p>
 				</div>
 			</div>
@@ -456,26 +449,25 @@ var lang_ru = {
 				</div>
 				<div class="skills__block-text">
 					<p class="skills__block-text__paragraph-lead">
-						I have upper-intermediate knowledge of English.
+						Мой уровень навыков в английском - выше среднего (upper-intermidiate)
 					</p>
 					<ul class="skills__block-text__list">
-						<p class="skills__block-text__list-head">I can:</p>
+						<p class="skills__block-text__list-head">Я могу:</p>
 						<li class="skills__block-text__list-item">
 							<i class="fas fa-video"></i>
-							watch youtube videos and serials in English
+							свободно смотреть видео на ютубе и сериалы
 						</li>
 						<li class="skills__block-text__list-item">
 							<i class="fas fa-book-open"></i>
-							read the docs written in English
+							читать документацию на английском
 						</li>
 						<li class="skills__block-text__list-item">
 							<i class="fas fa-pen"></i>
-							write in English myself
+							писать на английском
 						</li>
 					</ul>
 					<p class="skills__block-text__paragraph">
-						This website also has an English version written by
-						myself!
+						Этот сайт также имеет версию, написанную на английском! Можете на неё посмотреть
 					</p>
 				</div>
 			</div>
@@ -496,6 +488,7 @@ const firstScreenBlock = document.querySelector('.first-screen__text');
 const aboutHeader = document.querySelector('.about__head');
 const aboutBioText = document.querySelector('.about__bio-text');
 const aboutStoryText = document.querySelector('.about__story-text');
+const skillsSection = document.querySelector('.skills');
 
 var language = window.navigator.userLanguage || window.navigator.language;
 
@@ -513,6 +506,8 @@ if (language.match(/(ru)/gi)) {
 	aboutHeader.innerHTML = lang_ru['about']['about-head'];
 	aboutBioText.innerHTML = lang_ru['about']['about-bio'];
 	aboutStoryText.innerHTML = lang_ru['about']['about-story'];
+
+	skillsSection.innerHTML = lang_ru['skills'];
 } else if (language.match(/(en)/gi)) {
 	html.setAttribute('lang', 'en');
 	home.textContent = lang_en['header']['home'];
@@ -527,6 +522,8 @@ if (language.match(/(ru)/gi)) {
 	aboutHeader.innerHTML = lang_en['about']['about-head'];
 	aboutBioText.innerHTML = lang_en['about']['about-bio'];
 	aboutStoryText.innerHTML = lang_en['about']['about-story'];
+
+	skillsSection.innerHTML = lang_en['skills'];
 }
 
 function changeLang() {
@@ -546,6 +543,8 @@ function changeLang() {
 		aboutHeader.innerHTML = lang_ru['about']['about-head'];
 		aboutBioText.innerHTML = lang_ru['about']['about-bio'];
 		aboutStoryText.innerHTML = lang_ru['about']['about-story'];
+
+		skillsSection.innerHTML = lang_ru['skills'];
 	} else if (html.getAttribute('lang') == 'ru') {
 		html.setAttribute('lang', 'en');
 
@@ -562,5 +561,7 @@ function changeLang() {
 		aboutHeader.innerHTML = lang_en['about']['about-head'];
 		aboutBioText.innerHTML = lang_en['about']['about-bio'];
 		aboutStoryText.innerHTML = lang_en['about']['about-story'];
+
+		skillsSection.innerHTML = lang_en['skills'];
 	}
 }
