@@ -26,7 +26,7 @@ body {
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
 	font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', 'Roboto', sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -123,7 +123,7 @@ body::-webkit-scrollbar-thumb {
 }
 .header__nav-list {
 	display: flex;
-	gap: 3.5rem;
+	gap: clamp(1rem, 3.5vw, 3.5rem);
 }
 .header__nav-list__link {
 	font-family: 'Comfortaa', cursive;
@@ -138,6 +138,11 @@ body::-webkit-scrollbar-thumb {
 }
 .header__nav-list__link:hover {
 	color: $white;
+}
+.header__nav-list__lang {
+	font-size: 1rem;
+	align-self: center;
+	cursor: pointer;
 }
 .header__button {
 	display: none;
@@ -664,7 +669,7 @@ body::-webkit-scrollbar-thumb {
 		display: none;
 	}
 	.header__nav-list {
-		@for $i from 1 through 5 {
+		@for $i from 1 through 6 {
 			.link-#{$i} {
 				opacity: 0;
 				animation: fadeIn 0.2s ease-in-out 1 forwards;
@@ -672,8 +677,9 @@ body::-webkit-scrollbar-thumb {
 			}
 		}
 	}
+
 	.header__nav-list._animated {
-		@for $i from 1 through 5 {
+		@for $i from 1 through 6 {
 			.link-#{$i} {
 				opacity: 1;
 				animation: fadeOut 0.1s ease-in-out 1 forwards;
@@ -737,6 +743,9 @@ body::-webkit-scrollbar-thumb {
 	}
 	.header__nav-list__link {
 		font-size: 2rem;
+	}
+	.header__nav-list__lang {
+		font-size: 1.5rem;
 	}
 	.header__nav._active .header__nav-list {
 		margin-top: 2.5rem;
