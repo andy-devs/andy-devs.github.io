@@ -301,7 +301,7 @@ var lang_ru = {
 			путь выбрать и начал изучать компьютерные науки: закончил Гарвардский курс CS50.
 		</p>
 		<h3 class="about__story-text__heading">
-			Пробую Web разработку <i class="fas fa-code"></i>
+			Пробую Web Dev <i class="fas fa-code"></i>
 		</h3>
 		<p class="about__story-text__paragraph">
 			В апреле 2021 года я по-настоящему начал свой путь программирования, когда купил курс по веб-разработке 
@@ -343,6 +343,7 @@ function changeLang() {
 	if (html.getAttribute('lang') == 'en') {
 		console.log('working to ru');
 		html.setAttribute('lang', 'ru');
+
 		home.textContent = lang_ru['header']['home'];
 		about.textContent = lang_ru['header']['about'];
 		skills.textContent = lang_ru['header']['skills'];
@@ -352,20 +353,24 @@ function changeLang() {
 
 		firstScreenBlock.innerHTML =
 			lang_ru['first-screen']['first-screen-text'];
+
 		aboutHeader.innerHTML = lang_ru['about']['about-head'];
 		aboutBioText.innerHTML = lang_ru['about']['about-bio'];
 		aboutStoryText.innerHTML = lang_ru['about']['about-story'];
 	} else if (html.getAttribute('lang') == 'ru') {
 		console.log('working to en');
 		html.setAttribute('lang', 'en');
+
 		home.textContent = lang_en['header']['home'];
 		about.textContent = lang_en['header']['about'];
 		skills.textContent = lang_en['header']['skills'];
 		projects.textContent = lang_en['header']['projects'];
 		contacts.textContent = lang_en['header']['contacts'];
 		lang.textContent = lang_en['header']['lang'];
+
 		firstScreenBlock.innerHTML =
 			lang_en['first-screen']['first-screen-text'];
+
 		aboutHeader.innerHTML = lang_en['about']['about-head'];
 		aboutBioText.innerHTML = lang_en['about']['about-bio'];
 		aboutStoryText.innerHTML = lang_en['about']['about-story'];

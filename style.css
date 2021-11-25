@@ -437,13 +437,14 @@ body::-webkit-scrollbar-thumb {
 .about__story-text__preview {
   text-indent: 50px;
   font-size: clamp(1.4rem, 2vw, 2.5rem);
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 2.5rem;
   font-family: 'Comfortaa', cursive;
 }
 
 .about__story-text__paragraph {
   margin-bottom: 2rem;
+  font-weight: 300;
   text-indent: 50px;
   white-space: normal;
 }
