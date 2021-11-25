@@ -204,6 +204,85 @@ var lang_en = {
 		</p>
 	`,
 	},
+	skills: `
+	<h2 class="skills__head">Skills</h2>
+			<div class="skills__block">
+				<div class="skills__block-head">
+					<i class="fab fa-html5 skills__block-head__item"></i>
+					<i class="fab fa-css3-alt skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						I have intermediate skills in HTML and CSS.
+					</p>
+					<p class="skills__block-text__paragraph">
+						I built many projects with these technologies (you can
+						see them in related section) and continue to learn them
+						deeper. I took Responsive Web Design Course on
+						freeCodeCamp and Web Development Course on Udemy, which
+						I talked about earlier.
+					</p>
+					<p class="skills__block-text__paragraph">
+						I also worked with CSS preprocessors (SASS, SCSS). I use
+						SCSS for styling on this website.
+					</p>
+				</div>
+			</div>
+			<div class="skills__block">
+				<div class="skills__block-head">
+					<i class="fab fa-js skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						I have intermediate skills in JavaScript.
+					</p>
+					<p class="skills__block-text__paragraph">
+						I also worked with it in my projects. I took JavaScript
+						Algorithms and Data Structures Course on freeCodeCamp.
+						JS was in that Web Development Course on Udemy too (yes,
+						I love and recommend that one, if you want to learn web
+						development). I continue to solidify my knowledge in
+						this programming language by reading a book about it and
+						solving algorithmic challenges on CodeWars.
+					</p>
+					<p class="skills__block-text__paragraph">
+						In the nearest future, I want to learn React and It’s
+						ecosystem. But for now, I try to level up my skills in
+						vanilla JS. I really enjoy using it! Well, most of the
+						time.
+					</p>
+				</div>
+			</div>
+			<div class="skills__block">
+				<div class="skills__block-head lang-logo">
+					<i class="fas fa-language skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						I have upper-intermediate knowledge of English.
+					</p>
+					<ul class="skills__block-text__list">
+						<p class="skills__block-text__list-head">I can:</p>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-video"></i>
+							watch youtube videos and serials in English
+						</li>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-book-open"></i>
+							read the docs written in English
+						</li>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-pen"></i>
+							write in English myself
+						</li>
+					</ul>
+					<p class="skills__block-text__paragraph">
+						This website also has an English version written by
+						myself!
+					</p>
+				</div>
+			</div>
+	`,
 };
 
 var lang_ru = {
@@ -307,7 +386,7 @@ var lang_ru = {
 			В апреле 2021 года я по-настоящему начал свой путь программирования, когда купил курс по веб-разработке 
 			от Кольта Стила на Udemy. 
 			Там я выучил основы
-			таких технологий, как HTML, CSS и JS. Тогда я
+			таких технологий, как HTML, CSS и JS. Затем я начал
 			делать проекты и продолжил свой путь
 			обучения.
 		</p>
@@ -322,6 +401,85 @@ var lang_ru = {
 		</p>
 	`,
 	},
+	skills: `
+	<h2 class="skills__head">Навыки</h2>
+			<div class="skills__block">
+				<div class="skills__block-head">
+					<i class="fab fa-html5 skills__block-head__item"></i>
+					<i class="fab fa-css3-alt skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						У меня средний уровень навыков в HTML и CSS.
+					</p>
+					<p class="skills__block-text__paragraph">
+						Я сделал много проектов на этих технологиях (вы можете посмотреть на примеры в секции с проектами)
+						 и продолжаю изучать их глубже. Я прошёл
+						 I took Responsive Web Design Course on
+						freeCodeCamp and Web Development Course on Udemy, which
+						I talked about earlier.
+					</p>
+					<p class="skills__block-text__paragraph">
+						I also worked with CSS preprocessors (SASS, SCSS). I use
+						SCSS for styling on this website.
+					</p>
+				</div>
+			</div>
+			<div class="skills__block">
+				<div class="skills__block-head">
+					<i class="fab fa-js skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						I have intermediate skills in JavaScript.
+					</p>
+					<p class="skills__block-text__paragraph">
+						I also worked with it in my projects. I took JavaScript
+						Algorithms and Data Structures Course on freeCodeCamp.
+						JS was in that Web Development Course on Udemy too (yes,
+						I love and recommend that one, if you want to learn web
+						development). I continue to solidify my knowledge in
+						this programming language by reading a book about it and
+						solving algorithmic challenges on CodeWars.
+					</p>
+					<p class="skills__block-text__paragraph">
+						In the nearest future, I want to learn React and It’s
+						ecosystem. But for now, I try to level up my skills in
+						vanilla JS. I really enjoy using it! Well, most of the
+						time.
+					</p>
+				</div>
+			</div>
+			<div class="skills__block">
+				<div class="skills__block-head lang-logo">
+					<i class="fas fa-language skills__block-head__item"></i>
+				</div>
+				<div class="skills__block-text">
+					<p class="skills__block-text__paragraph-lead">
+						I have upper-intermediate knowledge of English.
+					</p>
+					<ul class="skills__block-text__list">
+						<p class="skills__block-text__list-head">I can:</p>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-video"></i>
+							watch youtube videos and serials in English
+						</li>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-book-open"></i>
+							read the docs written in English
+						</li>
+						<li class="skills__block-text__list-item">
+							<i class="fas fa-pen"></i>
+							write in English myself
+						</li>
+					</ul>
+					<p class="skills__block-text__paragraph">
+						This website also has an English version written by
+						myself!
+					</p>
+				</div>
+			</div>
+	`,
 };
 
 const langButton = document.querySelector('.header__nav-list__lang');
