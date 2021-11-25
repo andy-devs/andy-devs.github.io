@@ -339,9 +339,40 @@ const aboutHeader = document.querySelector('.about__head');
 const aboutBioText = document.querySelector('.about__bio-text');
 const aboutStoryText = document.querySelector('.about__story-text');
 
+var language = window.navigator.userLanguage || window.navigator.language;
+
+if (language.match(/(ru)/gi)) {
+	html.setAttribute('lang', 'ru');
+	home.textContent = lang_ru['header']['home'];
+	about.textContent = lang_ru['header']['about'];
+	skills.textContent = lang_ru['header']['skills'];
+	projects.textContent = lang_ru['header']['projects'];
+	contacts.textContent = lang_ru['header']['contacts'];
+	lang.textContent = lang_ru['header']['lang'];
+
+	firstScreenBlock.innerHTML = lang_ru['first-screen']['first-screen-text'];
+
+	aboutHeader.innerHTML = lang_ru['about']['about-head'];
+	aboutBioText.innerHTML = lang_ru['about']['about-bio'];
+	aboutStoryText.innerHTML = lang_ru['about']['about-story'];
+} else if (language.match(/(en)/gi)) {
+	html.setAttribute('lang', 'en');
+	home.textContent = lang_en['header']['home'];
+	about.textContent = lang_en['header']['about'];
+	skills.textContent = lang_en['header']['skills'];
+	projects.textContent = lang_en['header']['projects'];
+	contacts.textContent = lang_en['header']['contacts'];
+	lang.textContent = lang_en['header']['lang'];
+
+	firstScreenBlock.innerHTML = lang_en['first-screen']['first-screen-text'];
+
+	aboutHeader.innerHTML = lang_en['about']['about-head'];
+	aboutBioText.innerHTML = lang_en['about']['about-bio'];
+	aboutStoryText.innerHTML = lang_en['about']['about-story'];
+}
+
 function changeLang() {
 	if (html.getAttribute('lang') == 'en') {
-		console.log('working to ru');
 		html.setAttribute('lang', 'ru');
 
 		home.textContent = lang_ru['header']['home'];
@@ -358,7 +389,6 @@ function changeLang() {
 		aboutBioText.innerHTML = lang_ru['about']['about-bio'];
 		aboutStoryText.innerHTML = lang_ru['about']['about-story'];
 	} else if (html.getAttribute('lang') == 'ru') {
-		console.log('working to en');
 		html.setAttribute('lang', 'en');
 
 		home.textContent = lang_en['header']['home'];
