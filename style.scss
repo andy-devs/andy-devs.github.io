@@ -402,15 +402,15 @@ body::-webkit-scrollbar-thumb {
 .skills__block-text__list-head {
 	font-size: clamp(1.4rem, 1.6vw, 3.2rem);
 	font-weight: 300;
-	text-indent: 30px;
 }
 .skills__block-text__list-item {
-	padding-left: 4rem;
+	padding-left: 2rem;
 	font-size: clamp(1.1rem, 1.6vw, 2.5rem);
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	gap: 0.8rem;
+	margin-top: clamp(0.25rem, 0.6vw, 0.6rem);
 }
 .lang-logo {
 	margin-bottom: 0;
