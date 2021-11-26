@@ -417,6 +417,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 40rem;
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   letter-spacing: 0.1rem;
+  line-height: 1.8rem;
 }
 
 .about__story-text__heading {
@@ -446,7 +447,7 @@ body::-webkit-scrollbar-thumb {
   text-indent: 50px;
   white-space: normal;
   text-align: justify;
-  line-height: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 .terminal-cursor._active {
@@ -541,9 +542,9 @@ body::-webkit-scrollbar-thumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1166,7 +1167,6 @@ body::-webkit-scrollbar-thumb {
   .about__story-text__paragraph {
     margin-bottom: 1.7rem;
     text-indent: 30px;
-    line-height: 1.55rem;
   }
   .about__story-text__heading {
     margin-bottom: 0.2rem;
