@@ -283,6 +283,91 @@ var lang_en = {
 				</div>
 			</div>
 	`,
+	projects: 'Projects',
+	contacts: `
+	<h2 class="contacts__head">Contacts</h2>
+			<p class="contacts__text">
+				If you want to contact me for any of your reasons...
+			</p>
+			<p class="contacts__text">Send me email!</p>
+
+			<form
+				action="https://formsubmit.co/markushin.andrew@gmail.com"
+				method="POST"
+				class="contacts__form"
+			>
+				<div class="contacts__form-first">
+					<input
+						class="contacts__form-input"
+						type="text"
+						id="name"
+						name="name"
+						placeholder="your name"
+						required
+					/>
+					<input
+						class="contacts__form-input"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="your email"
+						required
+					/>
+				</div>
+				<textarea
+					class="contacts__form-textarea"
+					name="message"
+					id="message"
+					placeholder="message..."
+					required
+				></textarea>
+				<input type="text" name="_honey" style="display: none" />
+				<input type="hidden" name="_captcha" value="false" />
+				<input
+					type="hidden"
+					name="_next"
+					value="https://andy-devs.github.io/"
+				/>
+				<button
+					type="submit"
+					id="submit"
+
+					class="contacts__form-button"
+				>
+					Send
+				</button>
+			</form>
+			<p class="contacts__text contacts__text-bigger">My socials</p>
+			<div class="contacts__social">
+				<a
+					href="https://github.com/andy-devs"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-github contacts__social-image"></i>
+					<p class="contacts__social-text">andy-devs</p>
+				</a>
+				<a
+					href="https://vk.com/mark.andrey"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-vk contacts__social-image"></i>
+					<p class="contacts__social-text">mark.andrey</p>
+				</a>
+				<a
+					href="https://www.instagram.com/markusshinn/"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-instagram contacts__social-image"></i>
+					<p class="contacts__social-text">markusshinn/andy-devs</p>
+				</a>
+				<a
+					href="https://www.facebook.com/profile.php?id=100071666065631"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-facebook contacts__social-image"></i>
+					<p class="contacts__social-text">Andrey Markushin</p>
+				</a>
+			</div>`,
 };
 
 var lang_ru = {
@@ -333,7 +418,7 @@ var lang_ru = {
 			<span class="about__bio-text__focus">18</span> и я живу в
 			
 			<span class="about__bio-text__focus"
-				>Омске, России</span
+				>России, город Омск</span
 			>.
 		</p>
 		<p class="about__bio-text__paragraph">
@@ -436,8 +521,8 @@ var lang_ru = {
 						(Я очень рекомендую его, если вы тоже хотите научится Веб разработке). Я продолжаю оттачивать свои навыки в этом языке 
 						программирования читая книгу и решая алгоритмические задачки на CodeWars.
 					</p>
-					<p class="skills__block-text__paragraph">]
-						В ближайшем будущем Я хочу изучить React и его экосистему.
+					<p class="skills__block-text__paragraph">
+						В ближайшем будущем я хочу изучить React и его экосистему.
 						Но сейчас я повышаю свой уровень в нативном JS.
 						Я очень люблю на нём писать! Что ж, большую часть времени.
 					</p>
@@ -449,7 +534,7 @@ var lang_ru = {
 				</div>
 				<div class="skills__block-text">
 					<p class="skills__block-text__paragraph-lead">
-						Мой уровень навыков в английском - выше среднего (upper-intermidiate)
+						Мой уровень навыков в английском - выше среднего (upper-intermediate)
 					</p>
 					<ul class="skills__block-text__list">
 						<p class="skills__block-text__list-head">Я могу:</p>
@@ -467,11 +552,96 @@ var lang_ru = {
 						</li>
 					</ul>
 					<p class="skills__block-text__paragraph">
-						Этот сайт также имеет версию, написанную на английском! Можете на неё посмотреть
+						Этот сайт также имеет версию, написанную на английском! Можете на неё посмотреть.
 					</p>
 				</div>
 			</div>
 	`,
+	projects: 'Проекты',
+	contacts: `
+	<h2 class="contacts__head">Контакты</h2>
+			<p class="contacts__text">
+				Если вы хотите со мной связаться по любой из причин...
+			</p>
+			<p class="contacts__text">Отправьте сообщение!</p>
+
+			<form
+				action="https://formsubmit.co/markushin.andrew@gmail.com"
+				method="POST"
+				class="contacts__form"
+			>
+				<div class="contacts__form-first">
+					<input
+						class="contacts__form-input"
+						type="text"
+						id="name"
+						name="name"
+						placeholder="ваше имя"
+						required
+					/>
+					<input
+						class="contacts__form-input"
+						type="email"
+						id="email"
+						name="email"
+						placeholder="ваш email"
+						required
+					/>
+				</div>
+				<textarea
+					class="contacts__form-textarea"
+					name="message"
+					id="message"
+					placeholder="сообщение..."
+					required
+				></textarea>
+				<input type="text" name="_honey" style="display: none" />
+				<input type="hidden" name="_captcha" value="false" />
+				<input
+					type="hidden"
+					name="_next"
+					value="https://andy-devs.github.io/"
+				/>
+				<button
+					type="submit"
+					id="submit"
+
+					class="contacts__form-button"
+				>
+					Отправить
+				</button>
+			</form>
+			<p class="contacts__text contacts__text-bigger">Мои соц сети</p>
+			<div class="contacts__social">
+				<a
+					href="https://github.com/andy-devs"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-github contacts__social-image"></i>
+					<p class="contacts__social-text">andy-devs</p>
+				</a>
+				<a
+					href="https://vk.com/mark.andrey"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-vk contacts__social-image"></i>
+					<p class="contacts__social-text">mark.andrey</p>
+				</a>
+				<a
+					href="https://www.instagram.com/markusshinn/"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-instagram contacts__social-image"></i>
+					<p class="contacts__social-text">markusshinn/andy-devs</p>
+				</a>
+				<a
+					href="https://www.facebook.com/profile.php?id=100071666065631"
+					class="contacts__social-item"
+				>
+					<i class="fab fa-facebook contacts__social-image"></i>
+					<p class="contacts__social-text">Andrey Markushin</p>
+				</a>
+			</div>`,
 };
 
 const langButton = document.querySelector('.header__nav-list__lang');
@@ -489,6 +659,10 @@ const aboutHeader = document.querySelector('.about__head');
 const aboutBioText = document.querySelector('.about__bio-text');
 const aboutStoryText = document.querySelector('.about__story-text');
 const skillsSection = document.querySelector('.skills');
+
+const projectsHead = document.querySelector('.projects__head');
+
+const contactsSection = document.querySelector('.contacts');
 
 var language = window.navigator.userLanguage || window.navigator.language;
 
@@ -508,6 +682,10 @@ if (language.match(/(ru)/gi)) {
 	aboutStoryText.innerHTML = lang_ru['about']['about-story'];
 
 	skillsSection.innerHTML = lang_ru['skills'];
+
+	projectsHead.textContent = lang_ru['projects'];
+
+	contactsSection.innerHTML = lang_ru['contacts'];
 } else if (language.match(/(en)/gi)) {
 	html.setAttribute('lang', 'en');
 	home.textContent = lang_en['header']['home'];
@@ -524,6 +702,10 @@ if (language.match(/(ru)/gi)) {
 	aboutStoryText.innerHTML = lang_en['about']['about-story'];
 
 	skillsSection.innerHTML = lang_en['skills'];
+
+	projectsHead.textContent = lang_en['projects'];
+
+	contactsSection.innerHTML = lang_en['contacts'];
 }
 
 function changeLang() {
@@ -545,6 +727,10 @@ function changeLang() {
 		aboutStoryText.innerHTML = lang_ru['about']['about-story'];
 
 		skillsSection.innerHTML = lang_ru['skills'];
+
+		projectsHead.textContent = lang_ru['projects'];
+
+		contactsSection.innerHTML = lang_ru['contacts'];
 	} else if (html.getAttribute('lang') == 'ru') {
 		html.setAttribute('lang', 'en');
 
@@ -563,5 +749,9 @@ function changeLang() {
 		aboutStoryText.innerHTML = lang_en['about']['about-story'];
 
 		skillsSection.innerHTML = lang_en['skills'];
+
+		projectsHead.textContent = lang_en['projects'];
+
+		contactsSection.innerHTML = lang_en['contacts'];
 	}
 }
