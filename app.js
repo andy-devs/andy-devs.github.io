@@ -685,26 +685,6 @@ if (language.match(/(ru)/gi)) {
 	projectsHead.textContent = lang_ru['projects'];
 
 	contactsSection.innerHTML = lang_ru['contacts'];
-} else if (language.match(/(en)/gi)) {
-	html.setAttribute('lang', 'en');
-	home.textContent = lang_en['header']['home'];
-	about.textContent = lang_en['header']['about'];
-	skills.textContent = lang_en['header']['skills'];
-	projects.textContent = lang_en['header']['projects'];
-	contacts.textContent = lang_en['header']['contacts'];
-	lang.textContent = lang_en['header']['lang'];
-
-	firstScreenBlock.innerHTML = lang_en['first-screen']['first-screen-text'];
-
-	aboutHeader.innerHTML = lang_en['about']['about-head'];
-	aboutBioText.innerHTML = lang_en['about']['about-bio'];
-	aboutStoryText.innerHTML = lang_en['about']['about-story'];
-
-	skillsSection.innerHTML = lang_en['skills'];
-
-	projectsHead.textContent = lang_en['projects'];
-
-	contactsSection.innerHTML = lang_en['contacts'];
 }
 
 function changeLang() {
