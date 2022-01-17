@@ -422,7 +422,7 @@ body::-webkit-scrollbar-thumb {
 
 .about__story-text__heading {
   font-size: clamp(1.2rem, 1.7vw, 2.1rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
   text-indent: 50px;
   font-weight: 300;
   font-family: "Cabin", sans-serif;
@@ -447,8 +447,8 @@ body::-webkit-scrollbar-thumb {
   font-weight: 200;
   text-indent: 50px;
   white-space: normal;
-  text-align: justify;
-  line-height: clamp(1.2rem, 2vw, 1.8rem);
+  text-align: left;
+  line-height: clamp(1.2rem, 2vw, 2.1rem);
 }
 
 .terminal-cursor._active {
@@ -521,9 +521,9 @@ body::-webkit-scrollbar-thumb {
   text-indent: 30px;
   font-size: clamp(1.1rem, 1.5vw, 1.5rem);
   font-weight: 200;
-  line-height: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: clamp(1.4rem, 2.1vw, 2.2rem);
   margin-bottom: 0.9rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .skills__block-text__list {
@@ -532,6 +532,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skills__block-text__list-head {
+  padding-left: 2rem;
   font-size: clamp(1.4rem, 1.6vw, 3.2rem);
   font-weight: 300;
 }
