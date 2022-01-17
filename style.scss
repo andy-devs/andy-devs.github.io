@@ -6,6 +6,8 @@ $light-gray: #aeaeae;
 $transparent-light-gray: rgba(174, 174, 174, 0.3);
 $lighter-gray: #d8d8d8;
 
+$second-font: 'Cabin', sans-serif;
+
 $header-height: 4.5rem;
 /* Box sizing rules */
 *,
@@ -126,9 +128,10 @@ body::-webkit-scrollbar-thumb {
 	gap: clamp(1rem, 3.5vw, 3.5rem);
 }
 .header__nav-list__link {
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 	color: $transparent-white;
 	text-decoration: none;
+
 	font-size: 1.4rem;
 	transition: color 0.2s ease-out;
 	-webkit-transition: color 0.2s ease-out;
@@ -239,7 +242,7 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: 0.4rem;
 	font-weight: 400;
 	margin-bottom: 4rem;
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .about__bio {
 	display: flex;
@@ -324,7 +327,7 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 0.5rem;
 	text-indent: 50px;
 	font-weight: 300;
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .fas,
 .far {
@@ -336,7 +339,7 @@ body::-webkit-scrollbar-thumb {
 	line-height: 2.5rem;
 	font-weight: 500;
 	margin-bottom: 2.5rem;
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .about__story-text__paragraph {
 	margin-bottom: 2rem;
@@ -368,7 +371,7 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: 0.4rem;
 	font-weight: 400;
 	margin-bottom: clamp(0rem, 1vw, 1.5rem);
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .skills__block {
 	display: flex;
@@ -427,7 +430,7 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: 0.4rem;
 	font-weight: 400;
 	margin-bottom: clamp(2.5rem, 3.2vw, 3.5rem);
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .projects__grid {
 	max-width: 1200px;
@@ -510,7 +513,7 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: 0.4rem;
 	font-weight: 400;
 	margin-bottom: clamp(1.5rem, 2vw, 2.2rem);
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .contacts__text {
 	text-align: center;
@@ -601,7 +604,7 @@ body::-webkit-scrollbar-thumb {
 }
 .contacts__text-bigger {
 	font-size: clamp(1.8rem, 3vw, 3.5rem);
-	font-family: 'Comfortaa', cursive;
+	font-family: $second-font;
 }
 .contacts__social {
 	max-width: 500px;

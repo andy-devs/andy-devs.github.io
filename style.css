@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header__nav-list__link {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 1.4rem;
@@ -302,7 +302,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4rem;
   font-weight: 400;
   margin-bottom: 4rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .about__bio {
@@ -425,7 +425,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 0.5rem;
   text-indent: 50px;
   font-weight: 300;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .fas,
@@ -439,7 +439,7 @@ body::-webkit-scrollbar-thumb {
   line-height: 2.5rem;
   font-weight: 500;
   margin-bottom: 2.5rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .about__story-text__paragraph {
@@ -483,7 +483,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4rem;
   font-weight: 400;
   margin-bottom: clamp(0rem, 1vw, 1.5rem);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .skills__block {
@@ -567,7 +567,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4rem;
   font-weight: 400;
   margin-bottom: clamp(2.5rem, 3.2vw, 3.5rem);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .projects__grid {
@@ -677,7 +677,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.4rem;
   font-weight: 400;
   margin-bottom: clamp(1.5rem, 2vw, 2.2rem);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .contacts__text {
@@ -800,7 +800,7 @@ body::-webkit-scrollbar-thumb {
 
 .contacts__text-bigger {
   font-size: clamp(1.8rem, 3vw, 3.5rem);
-  font-family: 'Comfortaa', cursive;
+  font-family: "Cabin", sans-serif;
 }
 
 .contacts__social {
