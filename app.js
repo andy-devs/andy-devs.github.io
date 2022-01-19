@@ -140,9 +140,7 @@ var lang_en = {
 		</p>
 		<p class="about__bio-text__paragraph">
 		I’m passionate about
-			<span class="about__bio-text__focus">coding</span>
-			and
-			<span class="about__bio-text__focus">dancing</span>.
+			<span class="about__bio-text__focus">coding</span>.
 		</p>
 		<div class="about__bio-text__info">
 			<p class="about__bio-text__info-head">
@@ -151,16 +149,7 @@ var lang_en = {
 			<ul class="about__bio-text__info-list">
 				<li class="about__bio-text__info-item">
 					<i class="fas fa-graduation-cap"></i>
-					learn new skills and technologies
-				</li>
-				<li class="about__bio-text__info-item">
-					<div class="dance-image">
-						<img
-							src="./images/dancing-logo.svg"
-							alt=""
-						/>
-					</div>
-					dance on my own or with my friends
+					learn new skills
 				</li>
 				<li class="about__bio-text__info-item">
 					<i class="fas fa-gamepad"></i>
@@ -239,8 +228,7 @@ var lang_en = {
 					<p class="skills__block-text__paragraph">
 						I also worked with it in my projects. I took JavaScript
 						Algorithms and Data Structures Course on freeCodeCamp.
-						JS was in that Web Development Course on Udemy too (I love and recommend that one, if you want to learn web
-						development). I continue to solidify my knowledge in
+						JS was in that Web Development Course on Udemy too. I continue to solidify my knowledge in
 						this programming language by reading a book about it and
 						solving algorithmic challenges on CodeWars.
 					</p>
@@ -275,10 +263,7 @@ var lang_en = {
 							write in English myself
 						</li>
 					</ul>
-					<p class="skills__block-text__paragraph">
-						This website also has an English version written by
-						myself!
-					</p>
+					
 				</div>
 			</div>
 	`,
@@ -422,9 +407,7 @@ var lang_ru = {
 		</p>
 		<p class="about__bio-text__paragraph">
 			Я люблю
-			<span class="about__bio-text__focus">программирование</span>
-			и
-			<span class="about__bio-text__focus">танцы</span>.
+			<span class="about__bio-text__focus">программирование</span>.
 		</p>
 		<div class="about__bio-text__info">
 			<p class="about__bio-text__info-head">
@@ -433,16 +416,7 @@ var lang_ru = {
 			<ul class="about__bio-text__info-list">
 				<li class="about__bio-text__info-item">
 					<i class="fas fa-graduation-cap"></i>
-					изучаю новые навыки и технологии
-				</li>
-				<li class="about__bio-text__info-item">
-					<div class="dance-image">
-						<img
-							src="./images/dancing-logo.svg"
-							alt=""
-						/>
-					</div>
-					танцую один или с друзьями
+					изучаю новые навыки
 				</li>
 				<li class="about__bio-text__info-item">
 					<i class="fas fa-gamepad"></i>
@@ -516,8 +490,7 @@ var lang_ru = {
 					</p>
 					<p class="skills__block-text__paragraph">
 						Я также работал с ним в своих нескольких проектах. Я прошёл курс Алгоритмов и Структур Данных на freeCodeCamp. 
-						JS тоже был в курсе по Веб разработке на Udemy
-						(я очень рекомендую его, если вы тоже хотите научится Веб разработке). Я продолжаю оттачивать свои навыки в этом языке 
+						JS тоже был в курсе по Веб разработке на Udemy. Я продолжаю оттачивать свои навыки в этом языке 
 						программирования читая книгу и решая алгоритмические задачки на CodeWars.
 					</p>
 					<p class="skills__block-text__paragraph">
@@ -550,9 +523,6 @@ var lang_ru = {
 							писать на английском
 						</li>
 					</ul>
-					<p class="skills__block-text__paragraph">
-						Этот сайт также имеет версию, написанную на английском! Можете на неё посмотреть.
-					</p>
 				</div>
 			</div>
 	`,

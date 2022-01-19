@@ -448,7 +448,7 @@ body::-webkit-scrollbar-thumb {
   text-indent: 50px;
   white-space: normal;
   text-align: left;
-  line-height: clamp(1.2rem, 2vw, 2.1rem);
+  line-height: 1.5;
 }
 
 .terminal-cursor._active {
@@ -504,7 +504,7 @@ body::-webkit-scrollbar-thumb {
   display: -ms-flexbox;
   display: flex;
   gap: clamp(3rem, 9vw, 11rem);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.8rem;
 }
 
 .skills__block-head__item {
@@ -514,14 +514,14 @@ body::-webkit-scrollbar-thumb {
 .skills__block-text__paragraph-lead {
   text-align: center;
   font-size: clamp(1.3rem, 2.3vw, 3rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .skills__block-text__paragraph {
   text-indent: 30px;
   font-size: clamp(1.1rem, 1.5vw, 1.5rem);
   font-weight: 200;
-  line-height: clamp(1.4rem, 2.1vw, 2.2rem);
+  line-height: 1.5;
   margin-bottom: 0.9rem;
   text-align: left;
 }
