@@ -908,6 +908,7 @@ body::-webkit-scrollbar-thumb {
 		grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 	}
 }
+
 @media (max-width: 350px) {
 	.projects__grid {
 		padding: 0 2rem;
